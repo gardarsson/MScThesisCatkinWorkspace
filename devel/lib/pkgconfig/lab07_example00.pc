@@ -1,0 +1,8 @@
+prefix=/home/johann/catkin_ws/devel
+
+Name: lab07_example00
+Description: Description of lab07_example00
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/johann/catkin_ws/devel/lib 
+Requires: 

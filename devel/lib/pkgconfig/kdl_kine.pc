@@ -1,0 +1,8 @@
+prefix=/home/johann/catkin_ws/devel
+
+Name: kdl_kine
+Description: Description of kdl_kine
+Version: 0.0.0
+Cflags: -I/home/johann/catkin_ws/src/comp0127_lab/kdl_kine/include -I/usr/include/eigen3 -I/opt/ros/kinetic/include
+Libs: -L/home/johann/catkin_ws/devel/lib -lkdl_kine /opt/ros/kinetic/lib/liborocos-kdl.so.1.3.0
+Requires: roscpp rospy sensor_msgs kdl_parser

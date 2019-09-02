@@ -1,0 +1,2 @@
+arm_angle_pub:file_server:object_recognition_node:unityPoseSubscriber
+-DCATKIN_DEVEL_PREFIX=/home/johann/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/johann/catkin_ws/install -G Unix Makefiles

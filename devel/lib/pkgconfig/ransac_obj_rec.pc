@@ -1,0 +1,8 @@
+prefix=/home/johann/catkin_ws/devel
+
+Name: ransac_obj_rec
+Description: Description of ransac_obj_rec
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/johann/catkin_ws/devel/lib 
+Requires: 

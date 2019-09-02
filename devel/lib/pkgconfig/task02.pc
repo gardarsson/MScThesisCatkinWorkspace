@@ -1,0 +1,8 @@
+prefix=/home/johann/catkin_ws/devel
+
+Name: task02
+Description: Description of task02
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/johann/catkin_ws/devel/lib 
+Requires: 

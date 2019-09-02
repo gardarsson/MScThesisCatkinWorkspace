@@ -1,0 +1,8 @@
+prefix=/home/johann/catkin_ws/devel
+
+Name: lab02_task04
+Description: Description of lab02_task04
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/johann/catkin_ws/devel/lib 
+Requires: 

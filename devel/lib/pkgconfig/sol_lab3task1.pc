@@ -1,0 +1,8 @@
+prefix=/home/johann/catkin_ws/devel
+
+Name: sol_lab3task1
+Description: Description of sol_lab3task1
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/johann/catkin_ws/devel/lib 
+Requires: 

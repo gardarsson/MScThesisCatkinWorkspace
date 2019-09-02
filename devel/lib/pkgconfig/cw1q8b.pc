@@ -1,0 +1,8 @@
+prefix=/home/johann/catkin_ws/devel
+
+Name: cw1q8b
+Description: Description of cw1q8b
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/johann/catkin_ws/devel/lib 
+Requires: 

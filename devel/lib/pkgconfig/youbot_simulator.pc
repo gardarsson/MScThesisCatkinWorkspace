@@ -1,0 +1,8 @@
+prefix=/home/johann/catkin_ws/devel
+
+Name: youbot_simulator
+Description: Description of youbot_simulator
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/johann/catkin_ws/devel/lib 
+Requires: 

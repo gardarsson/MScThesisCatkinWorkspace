@@ -1,0 +1,8 @@
+prefix=/home/johann/catkin_ws/devel
+
+Name: astrobee_test
+Description: Description of astrobee_test
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/johann/catkin_ws/devel/lib 
+Requires: 

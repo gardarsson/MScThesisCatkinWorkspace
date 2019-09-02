@@ -1,0 +1,8 @@
+prefix=/home/johann/catkin_ws/devel
+
+Name: cw1q5
+Description: Description of cw1q5
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/johann/catkin_ws/devel/lib 
+Requires: 

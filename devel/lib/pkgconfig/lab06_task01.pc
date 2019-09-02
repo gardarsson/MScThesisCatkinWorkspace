@@ -1,0 +1,8 @@
+prefix=/home/johann/catkin_ws/devel
+
+Name: lab06_task01
+Description: Description of lab06_task01
+Version: 0.0.0
+Cflags: -I/home/johann/catkin_ws/src/comp0127_lab/lab06_stack/lab06_task01/include -I/usr/include/eigen3
+Libs: -L/home/johann/catkin_ws/devel/lib -llab06_task01
+Requires: geometry_msgs roscpp sensor_msgs tf2_ros rospy

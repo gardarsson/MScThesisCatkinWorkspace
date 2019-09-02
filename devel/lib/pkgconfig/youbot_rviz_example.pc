@@ -1,0 +1,8 @@
+prefix=/home/johann/catkin_ws/devel
+
+Name: youbot_rviz_example
+Description: Description of youbot_rviz_example
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/johann/catkin_ws/devel/lib 
+Requires: 

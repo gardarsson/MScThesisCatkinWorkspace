@@ -1,0 +1,8 @@
+prefix=/home/johann/catkin_ws/devel
+
+Name: arm_angle_pub
+Description: Description of arm_angle_pub
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/johann/catkin_ws/devel/lib 
+Requires: roscpp rospy std_msgs

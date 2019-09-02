@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <!-- Model -->
+	<model name="taperoll">
+		<static>0</static>
+		<link name="link">
+			<inertial>
+				<pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+				<mass>0.1</mass>
+				<inertia>
+					<ixx>0.00039</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.00039</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0078125</izz>
+					</inertia>
+				</inertial>
+				<collision name="collision">
+					<geometry>
+						<mesh>
+							<uri>model://meshes/new_tape_roll.dae</uri>
+						</mesh>
+					</geometry>
+				</collision>
+				<visual name="visual">
+					<geometry>
+						<mesh>
+							<uri>model://meshes/new_tape_roll.dae</uri>
+						</mesh>
+					</geometry>
+				</visual>
+			</link>
+		</model>
+</sdf>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--
+This launch file launches all required launchfiles and nodes for the Unity-ROS teleoperation system to work.
+-->
+<launch>
+	
+	<arg name="sviz" default="false"/>
+	<arg name="speed" default="1"/> 
+
+	<include file="$(find astrobee)/launch/sim.launch">
+		<arg name="dds" value="false"/>
+		<arg name="robot" value="sim_pub"/>
+		<arg name="rviz" value="true"/>
+		<arg name="sviz" value="$(arg sviz)"/>
+		<arg name="speed" value="$(arg speed)"/>
+	</include>
+
+	<include file="$(find file_server)/launch/ros_sharp_communication.launch">
+	</include>
+
+	
+	<node name="unityListener" pkg="unityPoseSubscriber" type="unityListener" output="screen" />
+	<node name="pointCloudListener" pkg="object_recognition_node" type="pointCloudListener" output="screen" />
+	<node name="arm_listener" pkg="arm_angle_pub" type="arm_listener" output="screen" />
+	
+	<node name="dock_repub" pkg="image_transport" type="republish" respawn="false" output="screen" args="raw in:='/hw/cam_dock' compressed out:='/dockcam_repub'"/>
+	<node name="nav_repub" pkg="image_transport" type="republish" respawn="false" output="screen" args="raw in:='/hw/cam_nav' compressed out:='/navcam_repub'"/>
+
+	<node name="spawn_taperoll" pkg="gazebo_ros" type="spawn_model" output="screen" 
+		  args="-file $(find unityPoseSubscriber)/meshes/model.sdf -sdf -model taperoll -x 11.5 -y -9.5 -z 4.5 -R 3.4 -P 0.5 -Y 1.8"/>
+
+	<!-- node name="spawn_taperoll" pkg="gazebo_ros" type="spawn_model" output="screen" 
+		  args="-file $(find unityPoseSubscriber)/meshes/model.sdf -sdf -model taperoll -x 11.7 -y -9.3 -z 4.5 -R 1.57 -P 0.0 -Y -0.5"/ -->
+
+	<!-- node name="spawn_taperoll" pkg="gazebo_ros" type="spawn_model" output="screen" 
+		  args="-file $(find unityPoseSubscriber)/meshes/model.sdf -sdf -model taperoll -x 10.8 -y -9.6 -z 4.5 -R 1.57 -P 0.0 -Y -0.3"/ -->	
+		
+
+	<node name="undock_astrobee" pkg="executive" type="teleop_tool" output="screen" args="-undock"/>
+
+</launch>

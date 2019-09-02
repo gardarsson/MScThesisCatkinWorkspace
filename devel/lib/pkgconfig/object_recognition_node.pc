@@ -1,0 +1,8 @@
+prefix=/home/johann/catkin_ws/devel
+
+Name: object_recognition_node
+Description: Description of object_recognition_node
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/johann/catkin_ws/devel/lib 
+Requires: 
